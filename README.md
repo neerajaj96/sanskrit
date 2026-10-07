@@ -6,16 +6,24 @@ No. LXIV, ed. Pandit Madhusudan Kaul Shastri, Nirnaya Sagar Press, Bombay, 1943)
 
 - **Book 1 (scholarly):** verbatim formal Malayalam rendering of the full
   commentary; Gītā mūla verses kept in Sanskrit, transcribed to Malayalam script.
-- **Book 2 (layman, forthcoming):** beginner-friendly simple-Malayalam rendering.
+  471 pages.
+- **Book 2 (layman):** beginner-friendly simple-Malayalam rendering — same
+  mūlas plus plain restatement, one-line essence (*sāraṃ*) per verse and
+  chapter recaps (*ithilninnu*). 125 pages, frontmatter + condensed Upodghāta
+  included.
 
 ## Downloads
 
-Get the latest PDF from **Releases** (right sidebar). Each part-release is a
-complete, readable book snapshot — later releases supersede earlier ones:
+Latest complete PDFs (each release is a full, readable book snapshot —
+later releases supersede earlier ones):
 
-- `part-NN` — Book 1 in progress (NN = peak-finished files of 27)
-- `v1.0-book1` — finished scholarly edition
-- `v1.0-book2` — finished layman edition
+- **Book 1:** [Sarvatobhadra_Malayalam.pdf](https://github.com/neerajaj96/sanskrit/releases/download/part-19/Sarvatobhadra_Malayalam.pdf)
+  ([part-19](https://github.com/neerajaj96/sanskrit/releases/tag/part-19))
+- **Book 2:** [Sarvatobhadra_Layman.pdf](https://github.com/neerajaj96/sanskrit/releases/download/layman-14/Sarvatobhadra_Layman.pdf)
+  ([layman-14](https://github.com/neerajaj96/sanskrit/releases/tag/layman-14))
+
+Older part-releases (`part-07`…`part-18`, `layman-01`…`layman-13`) remain
+under **Releases** as build history.
 
 ## Contents (final)
 
