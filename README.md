@@ -26,6 +26,8 @@ later releases supersede earlier ones):
   ([part-19](https://github.com/neerajaj96/sanskrit/releases/tag/part-19))
 - **Book 2:** [Sarvatobhadra_Layman.pdf](https://github.com/neerajaj96/sanskrit/releases/download/layman-14/Sarvatobhadra_Layman.pdf)
   ([layman-14](https://github.com/neerajaj96/sanskrit/releases/tag/layman-14))
+- **Doc 2 (Tantrāloka Ch.1 v01):** [Tantraloka_Malayalam_v01.pdf](https://github.com/neerajaj96/sanskrit/releases/download/tantraloka-v01/Tantraloka_Malayalam_v01.pdf)
+  ([tantraloka-v01](https://github.com/neerajaj96/sanskrit/releases/tag/tantraloka-v01))
 
 Older part-releases (`part-07`…`part-18`, `layman-01`…`layman-13`) remain
 under **Releases** as build history.
