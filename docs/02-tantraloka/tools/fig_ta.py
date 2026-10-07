@@ -4,13 +4,14 @@
 Families: motif/triad/wheel/ladder/flow/mirror/chain/sound.
 Output: assets/figs/fig_V{nnn}.png (1600x1000, 300dpi-ish line art) + assets/captions.json
 Palette matches mula boxes: cream #FFF8E1, gold #B8860B, maroon #4A140C.
-Inside figures: Malayalam numerals only (no conjunct text; shaping-safe).
+Inside figures: pure geometry only — NO text, NO numerals (verse reference
+lives in the Malayalam caption beneath each figure in the book).
 """
 import json
 import math
 import os
 
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageDraw
 
 BASE = "/root/tantraloka_ml"
 OUT = os.path.join(BASE, "assets", "figs")
@@ -25,23 +26,8 @@ HL = (178, 34, 34)
 
 W, H = 1600, 1000
 
-FONT_CANDS = [
-    "/usr/share/fonts/truetype/noto/NotoSansMalayalam-Bold.ttf",
-    "/usr/share/fonts/truetype/noto/NotoSansMalayalam-Regular.ttf",
-]
 
-
-def _font(sz):
-    for p in FONT_CANDS:
-        if os.path.exists(p):
-            try:
-                return ImageFont.truetype(p, sz)
-            except Exception:
-                continue
-    return ImageFont.load_default()
-
-
-MLD = "൦൧൨൫൬൭൮൯" if False else "൦൧൨൩൪൫൬൭൮൯"
+MLD = "൦൧൨൩൪൫൬൭൮൯"
 
 
 def ml(n):
@@ -53,14 +39,6 @@ def canvas():
     d = ImageDraw.Draw(im)
     d.rectangle([8, 8, W - 8, H - 8], outline=GOLD, width=6)
     return im, d
-
-
-def _num(d, xy, n, size=64, fill=MAROON):
-    f = _font(size)
-    t = ml(n)
-    bb = d.textbbox((0, 0), t, font=f)
-    w, h = bb[2] - bb[0], bb[3] - bb[1]
-    d.text((xy[0] - w / 2, xy[1] - h / 2), t, font=f, fill=fill)
 
 
 def motif(seed=0):
@@ -88,8 +66,6 @@ def triad(h=0):
         fill = HL if i == h % 3 else LITE
         d.ellipse([x - 130, y - 130, x + 130, y + 130],
                   fill=fill, outline=MAROON, width=6)
-        _num(d, (x, y), i + 1, 72, LITE if i == h % 3 else MAROON)
-    _num(d, (W // 2, H // 2 + 60), 0, 1)  # noop keep font warm
     cx, cy = W // 2, H // 2 - 20
     d.ellipse([cx - 70, cy - 70, cx + 70, cy + 70], fill=GOLD, outline=MAROON, width=5)
     return im
@@ -108,8 +84,6 @@ def wheel(n=12, h=0):
         wdt = 10 if k == h % n else 4
         col = HL if k == h % n else MAROON
         d.line([cx, cy, x, y], fill=col, width=wdt)
-        lx, ly = cx + (R + 62) * math.cos(a), cy + (R + 62) * math.sin(a)
-        _num(d, (lx, ly), k + 1, 52, HL if k == h % n else MAROON)
     d.ellipse([cx - 60, cy - 60, cx + 60, cy + 60], fill=MAROON)
     d.ellipse([cx - 22, cy - 22, cx + 22, cy + 22], fill=GOLD)
     return im
@@ -125,8 +99,6 @@ def ladder(steps=3, pos=0):
         fill = HL if k == pos % steps else LITE
         d.rounded_rectangle([W // 2 - bw // 2, y, W // 2 + bw // 2, y + bh],
                             radius=24, fill=fill, outline=MAROON, width=6)
-        _num(d, (W // 2, y + bh // 2), k + 1, 64,
-             LITE if k == pos % steps else MAROON)
         if k < steps - 1:
             d.line([W // 2, y + bh, W // 2, y + bh + gap],
                    fill=GOLD, width=8)
@@ -148,8 +120,6 @@ def flow(stages=4, pos=0):
         fill = HL if k == pos % stages else LITE
         d.rounded_rectangle([x, y, x + bw, y + bh], radius=28,
                             fill=fill, outline=MAROON, width=6)
-        _num(d, (x + bw // 2, y + bh // 2), k + 1, 72,
-             LITE if k == pos % stages else MAROON)
         if k < stages - 1:
             ax = x + bw
             d.line([ax, H // 2, ax + gap, H // 2], fill=GOLD, width=8)
@@ -201,8 +171,6 @@ def chain(links=5, pos=0):
         fill = HL if k == pos % links else LITE
         d.rounded_rectangle([W // 2 - bw // 2, y, W // 2 + bw // 2, y + bh],
                             radius=48, fill=fill, outline=MAROON, width=6)
-        _num(d, (W // 2, y + bh // 2), k + 1, 56,
-             LITE if k == pos % links else MAROON)
         if k < links - 1:
             d.line([W // 2 - 60, y + bh, W // 2 - 60, y + bh + gap],
                    fill=GOLD, width=6)
@@ -225,7 +193,6 @@ def sound(pos=0):
         d.rounded_rectangle([x0, y, x0 + wdt, y + bh], radius=20,
                             fill=fill if k == pos % n else None,
                             outline=MAROON, width=4)
-        _num(d, (x0 - 60, y + bh // 2), k + 1, 40, MAROON)
     return im
 
 
