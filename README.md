@@ -1,8 +1,9 @@
-# Sarvatobhadra Malayalam
+# Sanskrit — Malayalam translations
 
-Complete Malayalam translation of the **Bhagavadgītā with the Sarvatobhadra
-commentary of Rājānaka Rāmakāṇṭha** (Kashmir Series of Texts and Studies,
-No. LXIV, ed. Pandit Madhusudan Kaul Shastri, Nirnaya Sagar Press, Bombay, 1943).
+Two-book docs layout:
+
+- **Doc 1 — Sarvatobhadra Malayalam** (`docs/01-sarvatobhadra/`):
+  Bhagavadgītā with Rājānaka Rāmakāṇṭha's commentary (KSTS No. LXIV).
 
 - **Book 1 (scholarly):** verbatim formal Malayalam rendering of the full
   commentary; Gītā mūla verses kept in Sanskrit, transcribed to Malayalam script.
@@ -11,6 +12,10 @@ No. LXIV, ed. Pandit Madhusudan Kaul Shastri, Nirnaya Sagar Press, Bombay, 1943)
   mūlas plus plain restatement, one-line essence (*sāraṃ*) per verse and
   chapter recaps (*ithilninnu*). 125 pages, frontmatter + condensed Upodghāta
   included.
+
+- **Doc 2 — Tantrāloka Ch.1 Malayalam (abridged)**
+  (`docs/02-tantraloka/`): Abhinavagupta + Jayaratha Viveka, Ch.1 only —
+  `Tantraloka_Malayalam_v01.pdf` (74 pages) + 7 Markdown sources.
 
 ## Downloads
 
