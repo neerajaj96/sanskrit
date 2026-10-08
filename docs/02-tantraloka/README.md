@@ -39,5 +39,23 @@ at v245). QA: zero banned scripts, Latin only in [brackets].
 - Build: `tools/build_v02.py` + `tools/toc_pass2.py` (two-pass TOC/folios);
   QA gate report `QA_REPORT_V1_v02.md`, log `BUILD_LOG_V1_v02.md`.
 
+## v03 — maximum production-grade rebuild (same translation, byte-identical sources)
+- `Tantraloka_Malayalam_Volume1_v03_Trade.pdf` (+ `.docx`) — 219 pages,
+  true 6×9″ reflow. `Tantraloka_Malayalam_Volume1_v03_A4.pdf` (+ `.docx`)
+  — 134 pages.
+- Numeral law: every ordinary number in ASCII 0–9 (render layer;
+  `NUMERAL_AUDIT_V3.md` gate).
+- Numbered section openers (01–05 + verse spans); 37 labeled plates
+  (`assets/figs_v03/`, `tools/fig_v03.py`) with scholarly captions
+  (`Figure N … / Based on verses …`; manifest `VISUAL_MANIFEST_V3.json`).
+- True footnotes; verse citations hyperlinked (zero dead links); rebuilt
+  appendix tables (IAST intact); 39-entry glossary + auto-generated page
+  index; English navigational outline; bilingual cover/title; balanced
+  colophon explicit; continuous absolute folios.
+- Forensic audit `PUBLISHER_FORENSIC_AUDIT_V3.md` (P0: none), corrections
+  `CONTENT_CORRECTIONS_V3.md` (zero meaning changes), style
+  `HOUSE_STYLE_V3.md`, QA `QA_REPORT_V3.md`, log `BUILD_LOG_V3.md`.
+- Repro: `tools/drive_v03.py {trade|a4}` (all gates inside).
+
 Note: pushed here by explicit override of the project's local-only
 rule for this release.
