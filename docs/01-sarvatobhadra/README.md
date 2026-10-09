@@ -11,6 +11,11 @@ Rāmakāṇṭha's Sarvatobhadra commentary (KSTS No. LXIV).
 Sources live in the build workspace (`sarvatobhadra_ml/`); this folder
 ships the readable PDFs. Latest release assets supersede earlier ones.
 
+> Housekeeping: superseded binaries (`Sarvatobhadra_Malayalam.pdf`
+> baseline, `Sarvatobhadra_Layman.pdf`) were removed from tracking —
+> Book 1 is superseded by the v03 files below, Book 2's latest remains
+> the `layman-14` release. Paper trail and sources untouched.
+
 ## v03 — maximum production-grade rebuild (locked `translated_peak/` sources, byte-identical)
 - `Sarvatobhadra_Malayalam_v03_Trade.pdf` (+ `.docx`) — 672 pages, true
   6×9″ reflow. `Sarvatobhadra_Malayalam_v03_A4.pdf` (+ `.docx`) — 378

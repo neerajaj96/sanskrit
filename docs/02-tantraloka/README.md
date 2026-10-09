@@ -3,6 +3,12 @@
 Abridged Malayalam rendering of Tantrāloka Chapter 1 (Abhinavagupta,
 with Jayaratha's Viveka), via Dyczkowski 2023 English.
 
+> Housekeeping: superseded binaries (v01 PDF/DOCX, v02 PDFs/DOCXs,
+> v01 per-verse `fig_V*.png` plates) were removed from tracking —
+> v03 files below are canonical. Generators (`tools/fig_ta.py`,
+> `tools/fig_v02.py`), `captions.json`, and all paper docs stay, so
+> every older edition remains reproducible/described.
+
 - `Tantraloka_Malayalam_v01.pdf` (.docx alongside) — 280 pages A4:
   front + vv1–21 + vv22–105 + vv106–139 + vv140–245 + vv247–335
   + appendices (sound levels, dvādaśānta table, abbreviations).
