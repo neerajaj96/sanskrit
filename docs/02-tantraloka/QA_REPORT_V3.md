@@ -1,6 +1,6 @@
 # QA_REPORT_V3.md — final quality gate (both trims)
 
-Artifacts: `pdf/Tantraloka_Malayalam_Volume1_v03_Trade.pdf` (219pp, 6×9"),
+Artifacts: `pdf/Tantraloka_Malayalam_Volume1_v03_Trade.pdf` (218pp, 6×9"),
 `pdf/Tantraloka_Malayalam_Volume1_v03_A4.pdf` (134pp), companion DOCX +
 `.anchors/.pages/.starts/.index.json`. v01/v02 outputs untouched.
 

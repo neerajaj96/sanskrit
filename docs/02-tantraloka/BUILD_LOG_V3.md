@@ -33,7 +33,7 @@ set_outline_v03.py, numeral_audit_v03.py, drive_v03.py, toc_pass2.py)
 
 ## Pass record (final code)
 Trade: 53/53 mapped, 0-shift ×3 rounds, index converged round 0,
-folios match, 219pp. A4: same gates, 134pp. Numeral audit exit 0 both.
+folios match, 218pp. A4: same gates, 134pp. Numeral audit exit 0 both.
 Outline replaced post-export (48 entries). /Lang=ml set post-export.
 
 ## Repro

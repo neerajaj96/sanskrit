@@ -40,7 +40,7 @@ at v245). QA: zero banned scripts, Latin only in [brackets].
   QA gate report `QA_REPORT_V1_v02.md`, log `BUILD_LOG_V1_v02.md`.
 
 ## v03 — maximum production-grade rebuild (same translation, byte-identical sources)
-- `Tantraloka_Malayalam_Volume1_v03_Trade.pdf` (+ `.docx`) — 219 pages,
+- `Tantraloka_Malayalam_Volume1_v03_Trade.pdf` (+ `.docx`) — 218 pages,
   true 6×9″ reflow. `Tantraloka_Malayalam_Volume1_v03_A4.pdf` (+ `.docx`)
   — 134 pages.
 - Numeral law: every ordinary number in ASCII 0–9 (render layer;
